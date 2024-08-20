@@ -28,7 +28,11 @@ function App() {
   }, []);
   return (
     <div className="app">
-      <div className="app-logo">R</div>
+      <header className='header'>
+        <div className="app-logo">R</div>
+        <a className='resume-btn' href='/docs/resume.pdf' target='_blank'>Resume</a>
+      </header>
+
       <Navigation />
       <>
         <Home />
@@ -45,7 +49,10 @@ function App() {
             </div>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/rohan-thamke-a56475291/" target='_blank'>
+        <a
+          href="https://www.linkedin.com/in/rohan-thamke-a56475291/"
+          target="_blank"
+        >
           <div className="link">
             <div className="icon">
               <img src="images/linkedin.jpg" alt="" target="_blank" />
