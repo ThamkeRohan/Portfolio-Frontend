@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Project = ({image, name, features, githubFrontend, githubBackend, domain}) => {
+const Project = ({image, name, features, gitHub, domain}) => {
 
   return (
     <div className="project observed-item">
@@ -20,23 +20,15 @@ const Project = ({image, name, features, githubFrontend, githubBackend, domain})
               <div className='icon'>
                 <img src="images/external-link.svg" alt="" />
               </div>
-              Visit site
+              Live Demo
             </div>
           </a>
-          <a href={githubFrontend} target="_blank">
+          <a href={gitHub} target="_blank">
             <div className="link">
               <div className='icon'>
                 <img src="images/github.svg" alt="" />
               </div>
-              Frontend
-            </div>
-          </a>
-          <a href={githubBackend} target="_blank">
-            <div className="link">
-              <div className='icon'>
-                <img src="images/github.svg" alt="" />
-              </div>
-              Backend
+              Source Code
             </div>
           </a>
         </div>

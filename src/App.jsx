@@ -45,7 +45,7 @@ function App() {
             </div>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/rohan-thamke-a56475291/">
+        <a href="https://www.linkedin.com/in/rohan-thamke-a56475291/" target='_blank'>
           <div className="link">
             <div className="icon">
               <img src="images/linkedin.jpg" alt="" target="_blank" />

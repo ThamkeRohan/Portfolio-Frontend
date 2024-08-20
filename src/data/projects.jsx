@@ -1,13 +1,13 @@
 export const projects = [
   {
-    name: "CodeSphere",
-    image: "code-sphere.jpg",
+    name: "DevSphere",
+    image: "dev-sphere.jpg",
     features: (
       <ul className="features">
         <li>
           <p>
             A platform enabling developers to{" "}
-            <span className="highlight">write</span>, {" "}
+            <span className="highlight">write</span>,{" "}
             <span className="highlight">share</span> and{" "}
             <span className="highlight">discover technical articles</span> on
             various software development topics.
@@ -63,8 +63,8 @@ export const projects = [
         </li>
       </ul>
     ),
-    github: "https://github.com/ThamkeRohan/BlogHub-Frontend",
-    domain: "https://rohan-thamke-bloghub.netlify.app/",
+    gitHub: "https://github.com/ThamkeRohan/DevSphere",
+    domain: "https://devsphere-8edf.onrender.com/",
   },
   {
     name: "VirtualScoreboard",
@@ -75,14 +75,14 @@ export const projects = [
           <p>
             <span className="highlight">
               A cricket score tracking web application
-            </span> for umpires and spectators.
+            </span>{" "}
+            for umpires and spectators.
           </p>
         </li>
         <li>
           <p>
-            Allows umpires to{" "}
-            <span className="highlight">create accounts</span>, {" "}
-            <span className="highlight">initiate new matches</span> and{" "}
+            Allows umpires to <span className="highlight">create accounts</span>
+            , <span className="highlight">initiate new matches</span> and{" "}
             <span className="highlight">update live scores</span>.
           </p>
         </li>
@@ -122,7 +122,7 @@ export const projects = [
         </li>
       </ul>
     ),
-    github: "https://github.com/ThamkeRohan/BlogHub-Frontend",
-    domain: "https://rohan-thamke-bloghub.netlify.app/",
+    gitHub: "https://github.com/ThamkeRohan/VirtualScoreboard",
+    domain: "https://virtual-scoreboard.netlify.app/",
   },
 ];
