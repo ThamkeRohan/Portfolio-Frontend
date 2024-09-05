@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Control from './components/Control';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Navigation from './components/Navigation';
 
 function App() {
   useEffect(() => {
@@ -28,12 +26,6 @@ function App() {
   }, []);
   return (
     <div className="app">
-      <header className='header'>
-        <div className="app-logo">R</div>
-        <a className='resume-btn' href='/docs/resume.pdf' target='_blank'>Resume</a>
-      </header>
-
-      <Navigation />
       <>
         <Home />
         <About />

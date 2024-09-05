@@ -23,7 +23,7 @@
   --text-font-two: 1.5rem;
   --text-font-three: 1.1rem;
   --text-font-four: 0.9rem;
-  --text-font-five: 0.8rem;
+  --text-font-five: 0.7rem;
 
   --transition: all 0.3s ease-out;
 
@@ -142,11 +142,19 @@ button {
   animation-delay: calc(var(--duration) + 4 * var(--delay-control));
 }
 .home {
-  padding-top: 0;
   height: 100vh;
+  position: relative;
+}
+.home .intro{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
 }
 .home .left-section {
   display: flex;
@@ -179,6 +187,7 @@ button {
   width: 350px;
   height: 350px;
   position: relative;
+  z-index: 5;
 }
 .home .right-section img {
   width: 100%;
@@ -187,8 +196,7 @@ button {
   object-position: top;
   border-radius: 5px;
 }
-.home .right-section .profile-img::before,
-.home .right-section .profile-img::after {
+.home .right-section .profile-img::before {
   content: "";
   display: inline-block;
   width: 100%;
@@ -196,22 +204,11 @@ button {
   border-radius: 5px;
   position: absolute;
   transition: var(--transition);
-}
-.home .right-section .profile-img::before {
-  border: 2.5px solid var(--color-two);
-  transform: translate(10px, 10px);
-  z-index: -5;
-}
-.home .right-section .profile-img::after {
   left: 0;
   background-color: var(--color-six);
 }
-
-.home .right-section .profile-img:hover::after {
-  opacity: 0;
-}
 .home .right-section .profile-img:hover::before {
-  transform: translate(20px, 20px);
+  opacity: 0;
 }
 
 .about .content {
@@ -666,7 +663,7 @@ button {
     --intro-font: 1.8rem;
   }
   .section {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .section h2 {
     margin-bottom: 1.5rem;
@@ -678,15 +675,13 @@ button {
     font-size: var(--text-font-five);
   }
   .app-logo {
-    width: 3rem;
-    height: 3rem;
+    width: 2.6rem;
+    height: 2.6rem;
   }
-  .home {
-    padding-top: 1rem;
-    height: calc(100vh - 61px);
+  .home .intro{
     flex-direction: column-reverse;
     justify-content: start;
-    gap: 10px;
+    gap: 20px;
   }
   .home .right-section .profile-img {
     width: 250px;
