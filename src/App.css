@@ -681,7 +681,7 @@ button {
   .home .intro{
     flex-direction: column-reverse;
     justify-content: start;
-    gap: 20px;
+    gap: 30px;
   }
   .home .right-section .profile-img {
     width: 250px;
