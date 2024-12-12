@@ -6,7 +6,7 @@ const Home = () => {
     <section id="home" className="home">
       <header className="header">
         <div className="app-logo">R</div>
-        <a className="resume-btn" href="/docs/resume.pdf" target="_blank">
+        <a className="resume-btn" href="/docs/Rohan_Resume.pdf" target="_blank">
           Resume
         </a>
       </header>
